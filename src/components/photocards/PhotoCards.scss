@@ -1,0 +1,42 @@
+#container {
+    display: inline-block;
+    margin: 20px;
+    border: 1px solid black;
+    overflow: hidden;
+    /* clip the excess when child gets bigger than parent */
+    margin-bottom: 0px;
+    border-radius: 10px
+}
+
+#container img {
+    display: block;
+    transition: transform .4s;
+    /* smoother zoom */
+}
+
+#container:hover img {
+    transform: scale(1.3);
+    transform-origin: 50% 50%;
+}
+
+.cardtop {
+    width: 18rem;
+    border-radius: 10px 10px 0 0 !important;
+
+}
+
+.cardinner {
+    width: 18rem;
+    border-radius: 0 !important;
+}
+
+.cardtext {
+    font-size: 15px;
+    font-weight: 400
+}
+
+.cardbottom {
+    width: 18rem;
+    border-radius: 0 0 10px 10px !important;
+
+}
